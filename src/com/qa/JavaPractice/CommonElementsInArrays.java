@@ -1,6 +1,7 @@
 package com.qa.JavaPractice;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 
 // find common element in between two common array
 
@@ -15,7 +16,7 @@ public class CommonElementsInArrays {
 
 	public static void findCommonElements(int[] array1, int[] array2) {
 		// Using HashSet to store common elements
-		HashSet<Integer> set = new HashSet<>();
+		HashSet<Integer> set = new LinkedHashSet<>();
 
 		// Add elements from the first array to the set
 		for (int num : array1) {

@@ -11,7 +11,9 @@ public class uniqueElemetArray {
 		Integer[] array1 = { 1, 2, 3, 4, 5 };
 		Integer[] array2 = { 3, 4, 5, 6, 7 };
 
+		// output :Unique Elements: [1, 2]
 		// Convert arrays to sets to remove duplicates
+
 		Set<Integer> set1 = new HashSet<>(Arrays.asList(array1));
 		Set<Integer> set2 = new HashSet<>(Arrays.asList(array2));
 

@@ -13,8 +13,9 @@ public class PalindromeCheck {
 		// String str = scanner.nextLine();
 
 		String rev = "";
-		String s = "mita";
+		String s = "MOM";
 		int length = s.length();
+
 		for (int i = length - 1; i >= 0; i--) {
 			rev = rev + s.charAt(i);
 		}

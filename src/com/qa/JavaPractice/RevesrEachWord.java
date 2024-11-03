@@ -4,7 +4,7 @@ public class RevesrEachWord {
 
 	public static void main(String[] args) {
 
-		String str = "Today is interview ";
+		String str = "Today is interview"; // weivretni si yadoT
 		System.out.println(reverseMe(str));
 	}
 

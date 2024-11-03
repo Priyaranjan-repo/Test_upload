@@ -6,10 +6,11 @@ public class ShiftZero {
 		int z[] = { 1, 7, 5, 0, 0, 4, 0, 2, 9, 0, 3, 12 };
 
 		System.out.println("After shift zeros at end");
-		for (int i = 0; i < z.length; i++) {
-			System.out.print(" " + z[i]);
-			moveZero(z);
-		}
+
+		// for (int i = 0; i < z.length; i++) {
+		// System.out.print(" " + z[]);
+		moveZero(z);
+
 	}
 
 	public static void moveZero(int[] arr) {
@@ -17,7 +18,6 @@ public class ShiftZero {
 		int count = 0;
 
 		for (int i = 0; i < len; i++) {
-
 			if (arr[i] != 0) {
 				arr[count++] = arr[i];
 			}
@@ -25,8 +25,9 @@ public class ShiftZero {
 		while (count < len) {
 			arr[count++] = 0;
 		}
-		// for (int j = 0; j < len; j++) {
-		// System.out.print(" " + arr[j]);
-	}
+		for (int j = 0; j < len; j++) {
+			System.out.print(" " + arr[j]);
+		}
 
+	}
 }

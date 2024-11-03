@@ -12,11 +12,9 @@ public class AmstrongNo {
 		while (n > 0) {
 
 			temp = n % 10;
-
 			rev = rev + (temp * temp * temp);
 
 			n = n / 10;
-
 		}
 
 		if (originalNo == rev) {

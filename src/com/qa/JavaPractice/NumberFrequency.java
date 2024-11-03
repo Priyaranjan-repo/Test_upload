@@ -25,7 +25,7 @@ public class NumberFrequency {
 				map.put(num, 1);
 			}
 		}
-		// Print the frequency of each number
+
 		for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
 			System.out.println(entry.getKey() + " - " + entry.getValue() + " times");
 		}

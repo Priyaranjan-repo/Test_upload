@@ -21,8 +21,10 @@ public class VowelPrint {
 		 */
 
 		String s = "  abc!jhh#0987$jhhhh";
-		String s1 = s.replaceAll("[^a-zA-Z0-9]", " ");
+		String s1 = s.replaceAll("[^0-9]", " ");
+		String[] s12 = s.split("[^0-9]");
 		System.out.println(s1);
+		System.out.println(s12);
 
 		String replace = s.replaceAll("//d+", " ").trim();
 		System.out.println(replace);

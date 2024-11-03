@@ -4,10 +4,13 @@ public class RemoveSpclChar {
 
 	public static void main(String[] args) {
 
-		String removechar = "This@#$))is!##$&&an#&*In((*^$*(terview$*$";
+		String removechar = "This@#$)3546468)is!##$&&an#&*In((*^$*(terview$*$";
 
-		String aftre = removechar.replaceAll("[^a-zA-Z]", " ");
-		System.out.println(aftre);
+		String alpha = removechar.replaceAll("[^a-zA-Z]", "");// remove spcl char
+
+		String number = removechar.replaceAll("[^0-9]", " ");// remove apha
+		System.out.println(alpha);
+		System.out.println(number);
 
 	}
 

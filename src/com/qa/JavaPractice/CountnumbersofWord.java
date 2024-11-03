@@ -1,29 +1,10 @@
 package com.qa.JavaPractice;
 
 public class CountnumbersofWord {
-	// public static void main(String[] args) {
-	/*
-	 * // String s = " rettet12 yi ioo98";
-	 * 
-	 * String sentence = "How many words are in this sentence?";
-	 * 
-	 * int wordCount = countWords(sentence); System.out.println("Number of words: "
-	 * + wordCount); }
-	 * 
-	 * public static int countWords(String str) { if (str == null || str.isEmpty())
-	 * { return 0; }
-	 * 
-	 * // Split the string by spaces (or any whitespace) String[] words =
-	 * str.trim().split("\\s+");
-	 * 
-	 * // Return the number of words return words.length; }
-	 * 
-	 * }
-	 */
 
 ///////////////////////////////////---------------------------------////////////////////
 	public static void main(String[] args) {
-		String sr = " Welcome to the java session ";
+		String sr = "i 099$%&&#love7890 momos477788";
 		System.out.println("Count Number of word :" + countWordsWithPunctuation(sr));
 
 	}
@@ -34,7 +15,9 @@ public class CountnumbersofWord {
 		}
 
 		// Remove punctuation
-		str = str.replaceAll("[^a-zA-Z0-9\\s]", "");
+		str = str.replaceAll("[^a-zA-Z0-9]", "//s");
+		str = str.replaceAll("[^0-9]", "");
+		// replaceAll("[^a-zA-Z0-9\\s]", "");
 
 		// Split by whitespace and count words
 		String[] words = str.trim().split(" \\s+");

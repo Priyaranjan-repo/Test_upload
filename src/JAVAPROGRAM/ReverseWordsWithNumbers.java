@@ -5,6 +5,8 @@ public class ReverseWordsWithNumbers {
 	public static void main(String[] args) {
 		String input = "today110is210my310interview";
 
+		// output will "yadot110si210ym310weivretni"
+
 		String output = reverseLettersInString(input);
 		System.out.println(output);
 	}

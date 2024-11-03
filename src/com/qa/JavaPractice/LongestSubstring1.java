@@ -17,6 +17,7 @@ public class LongestSubstring1 {
 		String longoverrall = " ";
 
 		HashSet<Character> set = new HashSet<Character>();
+
 		for (int i = 0; i < str.length(); i++) {
 			char c = str.charAt(i);
 
@@ -35,5 +36,4 @@ public class LongestSubstring1 {
 		return longoverrall;
 
 	}
-
 }

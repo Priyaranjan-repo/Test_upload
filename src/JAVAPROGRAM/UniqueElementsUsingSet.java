@@ -22,6 +22,7 @@ public class UniqueElementsUsingSet {
 		// Iterate through the array and add elements to uniqueSet if not seen before
 		// If an element is already in uniqueSet, add it to duplicateSet
 		for (int num : arr) {
+
 			if (!duplicateSet.contains(num)) {
 				if (!uniqueSet.add(num)) {
 					uniqueSet.remove(num);

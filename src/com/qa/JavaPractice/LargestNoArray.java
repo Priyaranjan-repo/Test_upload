@@ -27,3 +27,6 @@ public class LargestNoArray {
 	}
 
 }
+
+//"" +ar[j]
+//aar(srr)
