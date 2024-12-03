@@ -16,16 +16,20 @@ public class ReversePyramid {
 		sc.close();
 	}
 
-	public static void printReversePyramid(int numRows) {
-		for (int i = numRows; i >= 1; i--) {
+	public static void printReversePyramid(int Rows) {
+
+		for (int i = 0; i < Rows; i++) {
 			// Print spaces
-			for (int j = 0; j < numRows - i; j++) {
+
+			for (int j = 0; j < i; j++) {
 				System.out.print(" ");
 			}
 
 			// Print stars
-			for (int k = 1; k <= 2 * i - 1; k++) {
-				System.out.print("*");
+
+			for (int j = 0; j < Rows - i; j++) {
+
+				System.out.print(" *");
 			}
 
 			// Move to the next line

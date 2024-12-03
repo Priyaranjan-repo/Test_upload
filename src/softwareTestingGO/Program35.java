@@ -1,7 +1,6 @@
 package softwareTestingGO;
 
 import java.util.LinkedHashMap;
-import java.util.Map;
 
 public class Program35 {
 
@@ -12,18 +11,22 @@ public class Program35 {
 		// Output: R1a1m1a2k1a3n1t1
 
 		String str = "Ramakant";
+		// String str = "priyaranka";
 		String op = " ";
-		Map<Character, Integer> map = new LinkedHashMap();
 
-		for (char ch : str.toCharArray()) {
-			if (map.containsKey(ch)) {
-				map.put(ch, map.get(ch) + 1);
-				op = op + ch + map.get(ch);
+		LinkedHashMap<Character, Integer> map = new LinkedHashMap<Character, Integer>();
+
+		for (char c : str.toCharArray()) {
+
+			if (map.containsKey(c)) {
+
+				map.put(c, map.get(c) + 1);
+				op = op + c + map.get(c);
+
 			} else {
-				op = op + ch + "1";
-				map.put(ch, 1);
+				op = op + c + "1";
+				map.put(c, 1);
 			}
-
 		}
 		System.out.println(op);
 	}

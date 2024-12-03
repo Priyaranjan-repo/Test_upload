@@ -31,8 +31,9 @@ public class DuplicateCharacterCount {
 		// Print the characters that appear more than once
 		System.out.println("Duplicate characters in the string:");
 		for (Map.Entry<Character, Integer> entry : charCountMap.entrySet()) {
-			// if (entry.getValue() > 1) {
-			System.out.println(entry.getKey() + ": " + entry.getValue() + " times");
+			if (entry.getValue() > 1) {
+				System.out.println(entry.getKey() + ": " + entry.getValue() + " times");
+			}
 		}
 	}
 }

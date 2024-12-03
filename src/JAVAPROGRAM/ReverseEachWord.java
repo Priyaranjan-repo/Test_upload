@@ -9,8 +9,8 @@ public class ReverseEachWord {
 		// output :-I ma gnibiG weivretnI
 		String[] word = s2.split(" ");
 
-		for (String n1 : word) {
-			System.out.print(reverse(n1) + " ");
+		for (String s : word) {
+			System.out.print(reverse(s) + " ");
 		}
 	}
 

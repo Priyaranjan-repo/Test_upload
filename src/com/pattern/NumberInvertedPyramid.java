@@ -12,6 +12,7 @@ public class NumberInvertedPyramid {
 
 			// Print repeated numbers
 			for (int j = 0; j < rows - i; j++) {
+				// System.out.print(" *");
 				System.out.print((rows - i) + " ");
 			}
 

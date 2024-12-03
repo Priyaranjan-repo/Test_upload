@@ -6,6 +6,7 @@ public class ReveseLastToFast {
 
 		// revesrse last to fast without chage sentence
 		String s = "Toady is java interview  ";
+		//output: interview java is Toady
 
 		// Output ="interview java is Today"
 

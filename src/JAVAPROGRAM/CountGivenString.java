@@ -1,6 +1,13 @@
 package JAVAPROGRAM;
 
 public class CountGivenString {
+	
+	public static void main(String[] args) {
+
+		System.out.print(CountString("sanghamitra"));
+
+	}
+
 
 	public static int CountString(String str) {
 
@@ -14,10 +21,5 @@ public class CountGivenString {
 		return count;
 	}
 
-	public static void main(String[] args) {
-
-		System.out.print(CountString("sanghamitra"));
-
-	}
-
+	
 }

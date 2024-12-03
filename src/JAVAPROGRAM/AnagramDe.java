@@ -5,26 +5,27 @@ import java.util.Arrays;
 public class AnagramDe {
 
 	public static void main(String[] args) {
+		// String s1 = "Silent"; // race,care
+		// String s2 = "Listen";
 
-		System.out.println(isAnagram("Listen", "Silent"));
+		System.out.println(isAnagramSort("Silent", "Listen"));
+
 	}
 
-	public static boolean isAnagram(String s1, String s2) {
-		String str1 = s1.replaceAll("\\s", "");
-		String str2 = s2.replaceAll("\\s", "");
+	public static boolean isAnagramSort(String str1, String str2) {
 
-		if (str1.length() != str2.length()) {
+		String string1 = str1.replaceAll("\\s", "");
+		String string2 = str1.replaceAll("\\s", "");
+
+		if (string1.length() != string2.length()) {
 			return false;
-
 		} else {
-			char c1[] = str1.toLowerCase().toCharArray();
-			char c2[] = str2.toLowerCase().toCharArray();
 
-			Arrays.sort(c1);
-
-			Arrays.sort(c2);
-
-			return Arrays.equals(c1, c2);
+			char[] a1 = string1.toLowerCase().toCharArray();
+			char[] a2 = string2.toLowerCase().toCharArray();
+			Arrays.sort(a1);
+			Arrays.sort(a2);
+			return Arrays.equals(a1, a2);
 		}
 	}
 }

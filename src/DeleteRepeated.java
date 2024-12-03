@@ -25,14 +25,13 @@ public class DeleteRepeated {
 
 		List<Integer> list = new LinkedList<Integer>();
 		for (Integer i : map.keySet()) {
+
 			if (map.get(i) == 1) {
-				// list.add(i);
+				list.add(i);
 			}
 		}
-		// Object[] nos = list.toArray();
-		System.out.println(Arrays.toString(no));
-		// System.out.println(Arrays.toString(nos));
-
+		Object[] nos = list.toArray();
+		System.out.println(Arrays.toString(nos));
 	}
 
 }

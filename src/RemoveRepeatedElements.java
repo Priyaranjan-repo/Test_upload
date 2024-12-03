@@ -23,7 +23,7 @@ public class RemoveRepeatedElements {
 		for (int num : arr) {
 			freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);
 		}
-
+System.out.println(freqMap);
 		// Create a list to store elements that are not repeated
 
 		List<Integer> li = new LinkedList<Integer>();
@@ -35,7 +35,6 @@ public class RemoveRepeatedElements {
 
 			}
 		}
-
 		return li;
 	}
 

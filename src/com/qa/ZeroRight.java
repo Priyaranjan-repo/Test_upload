@@ -1,31 +1,28 @@
 package com.qa;
 
+import java.util.Arrays;
+
 public class ZeroRight {
 
 	public static void main(String[] args) {
 		int arr[] = { 1, 7, 5, 0, 0, 4, 0, 2, 9, 0, 3, 12 };
+		System.out.println(Arrays.toString(arr));
 
 		for (int g = 0; g < arr.length; g++) {
 
-			System.out.print(" " + arr[g]);
+			for (int i = 0; i < arr.length - 1; i++) {
 
-			moveZero(arr);
-		}
-	}
+				if (arr[i] == 0) {
 
-	public static void moveZero(int[] arr) {
-		int len = arr.length;
-		int count = 0;
+					int temp = arr[i + 1];
 
-		for (int i = 0; i < len; i++) {
-			if (arr[i] != 0) {
-				arr[count++] = arr[i];
+					arr[i + 1] = arr[i];
+					arr[i] = temp;
+				}
 			}
-		}
-		while (count < len) {
-			arr[count++] = 0;
 
 		}
-		// return len;
+		System.out.println(Arrays.toString(arr));
+
 	}
 }

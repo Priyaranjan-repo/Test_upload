@@ -14,7 +14,8 @@ public class Test {
 		int num = 100;
 
 		if (num >= 100) {
-			System.out.println("Value of num is :" + num);
+			
+		System.out.println("Value of num is :" + num);
 		}
 	}
 }

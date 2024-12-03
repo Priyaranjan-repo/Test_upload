@@ -16,7 +16,7 @@ public class Demo2 {
 		String reverse = "";
 
 		for (int i = 0; i < str.length(); i++) {
-			reverse = str.charAt(i) + reverse;
+			reverse += str.charAt(i) + reverse;
 		}
 		return reverse;
 

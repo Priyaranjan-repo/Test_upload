@@ -5,7 +5,7 @@ public class occurance {
 
 	public static void main(String[] args) {
 
-		String s = "Priyaranjandass";
+		String s = "Priyaranjandas";
 
 		// String str = "Welcome to Selemium Interview";
 		countCharFreq(s);
@@ -29,7 +29,7 @@ public class occurance {
 		System.out.println(map);
 
 		for (Map.Entry<Character, Integer> entry : map.entrySet()) {
-			System.out.println("Repeating chararcter is :" + entry.getKey() + " - " + entry.getValue() + " times");
+			System.out.println(entry.getKey() + " - " + entry.getValue() + " times");
 		}
 
 	}

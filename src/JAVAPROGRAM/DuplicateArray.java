@@ -25,7 +25,7 @@ public class DuplicateArray {/*
 
 	public static void main(String[] args) {
 		String names[] = { "mita", "rita", "Gayatri", "mita" };
-
+		
 		Set<String> set = new HashSet<String>();
 		for (String s : names) {
 			if (set.add(s) == false) {
@@ -33,8 +33,9 @@ public class DuplicateArray {/*
 				System.out.println("Duplicate element is:" + s);
 			}
 
+	
+	
 		}
-
 	}
 }
 

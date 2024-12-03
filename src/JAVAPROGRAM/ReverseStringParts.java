@@ -3,7 +3,7 @@ package JAVAPROGRAM;
 public class ReverseStringParts {
 
 	public static void main(String[] args) {
-		String inputString = "abcd1234efgh5678";
+		String inputString = "abcd1234efgh5678";  //dcba1234hgfe5678
 		String outputString = reverseStringParts(inputString);
 
 		System.out.println("Input String: " + inputString);

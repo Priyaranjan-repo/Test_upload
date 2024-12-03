@@ -4,13 +4,13 @@ public class pyarmid {
 
 	public static void main(String[] args) {
 
-		int rows = 5; // Number of rows for the triangle
+		int rows = 5; // Number of rows
 
 		for (int i = 1; i <= rows; i++) { // Outer loop for each row
 
 			for (int j = 1; j <= i; j++) { // Inner loop to print stars
 
-				System.out.print(j); // Print star
+				System.out.print(j); // Print number
 
 			}
 

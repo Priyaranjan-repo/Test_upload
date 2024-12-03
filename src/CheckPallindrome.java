@@ -2,9 +2,8 @@ public class CheckPallindrome {
 
 	public static void main(String[] args) {
 
-		/*
-		 * String so = "MADAM"; reverse(so)
-		 */;
+		String so = "MADAM";
+		reverse(so);
 
 	}
 

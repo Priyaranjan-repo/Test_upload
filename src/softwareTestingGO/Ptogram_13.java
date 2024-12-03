@@ -1,31 +1,37 @@
 package softwareTestingGO;
 
-import java.util.LinkedHashMap;
-
 public class Ptogram_13 {
 
 	public static void main(String[] args) {
 
 		// Output: A4D3C3A1
 
-		String ip = "AAAADDDCCCA";
+		String ip = "AAAADDDCCCABA";
 		String op = "";
 
-		LinkedHashMap<Character, Integer> map = new LinkedHashMap<Character, Integer>();
-
+		int count = 0;
 		for (int i = 0; i < ip.length(); i++) {
 
-			if (map.containsKey(ip.charAt(i))) {
-				map.put(ip.charAt(i), map.get(ip.charAt(i)) + 1);
-			} else {
-				map.put(ip.charAt(i), 1);
+			for (int j = 0; j < ip.length(); j++) {
+
+				if (ip.charAt(i) == ip.charAt(j)) {
+
+					++count;
+
+				} else {
+
+					op = op + ip.charAt(i) + count;
+
+					count = 1;
+
+				}
+
+				i = j;
+
 			}
 		}
 
-		for (Character c : map.keySet()) {
-			op = op + c + map.get(c);
-		}
-
+		op = op + ip.charAt(ip.length() - 1) + 1;
 		System.out.println(op);
 
 	}

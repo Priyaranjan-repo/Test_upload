@@ -30,17 +30,24 @@ public class UpperCaselowerCase {
 	}
 
 	public static String swapCase(String str) {
-		char[] charArray = str.toCharArray();
+		
 
-		for (int i = 0; i < charArray.length; i++) {
-			char ch = charArray[i];
-
-			if (Character.isUpperCase(ch)) {
-				charArray[i] = Character.toLowerCase(ch);
-			} else if (Character.isLowerCase(ch)) {
-				charArray[i] = Character.toUpperCase(ch);
+		char [] word=str.toCharArray();
+		
+		for (int i = 0; i < word.length; i++) {
+			
+			char c =word[i];
+			
+			if(Character.isUpperCase(c)) {
+				word[i] = Character.toLowerCase(c);
+				
+			}
+			else if (Character.isUpperCase(c)) {
+				word[i]= Character.toLowerCase(c);
 			}
 		}
-		return new String(charArray);
+		
+		return new String(word);
+		//String result = new String(chars);
 	}
 }

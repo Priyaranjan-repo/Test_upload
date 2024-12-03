@@ -7,7 +7,7 @@ public class ReverseeachWord {
 		// yrtnuoC sI aidnI dna eguagnaL era dooG
 
 		// String s = "yadot110si210ym310weivretni";
-		String[] words = s.split(" ");
+		/*String[] words = s.split(" ");
 
 		String result = "";
 
@@ -25,4 +25,42 @@ public class ReverseeachWord {
 
 		System.out.println(result);
 	}
-}
+}*/
+
+	    String op[] = s.split(" ");
+	    String op1 = "";
+	    for (int i = 0; i < op.length; i++) {
+	        op1 = op1 + new StringBuffer(op[i]).reverse().toString() + " ";
+	    }
+	    System.out.println(op1.toString());
+	}
+
+	}
+
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

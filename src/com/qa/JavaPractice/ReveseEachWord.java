@@ -4,20 +4,28 @@ public class ReveseEachWord {
 
 	public static void main(String[] args) {
 
-		String s2 = "I am Giving Interview ";
+	String s = "I am Giving Interview ";  // output :-I ma gniviG weivretnI
 
-		// output :-I ma gnibiG weivretnI
-		String[] word = s2.split(" ");
+		String op =" ";
 
-		for (String n1 : word) {
-			System.out.print(reverseMe(n1) + " ");
+		String[] word = s.split(" ");
+		
+		for (int i =0;i<=word.length-1; i++) {
+			
+			op = op +reverseMe(word[i])+" " ;
+			
+			
 		}
+		System.out.println(s);
+		System.out.println(op.trim());
 	}
 
 	public static String reverseMe(String str) {
+	
 		String reverse = "";
-		for (int i = 0; i < str.length(); i++) {
-
+	   for (int i =0; i<=str.length()-1 ; i++) {
+			
+			
 			reverse = str.charAt(i) + reverse;
 		}
 		return reverse;
