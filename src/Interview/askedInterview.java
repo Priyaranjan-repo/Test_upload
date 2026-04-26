@@ -8,7 +8,6 @@ public class askedInterview {
 		convertDigit(input);
 
 	}
-
 	public static void convertDigit(String str) {
 
 		for (int i = 0; i < str.length(); i++) {
@@ -16,7 +15,6 @@ public class askedInterview {
 			if (Character.isAlphabetic(str.charAt(i))) {
 				System.out.print(str.charAt(i));
 
-			
 			} else {
 				
 				int z = Character.getNumericValue(str.charAt(i));

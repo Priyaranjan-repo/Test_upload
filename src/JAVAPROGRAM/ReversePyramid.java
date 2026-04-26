@@ -17,12 +17,13 @@ public class ReversePyramid {
 	}
 
 	public static void printReversePyramid(int numRows) {
+	
 		for (int i = numRows; i >= 1; i--) {
 			// Print spaces
 			for (int j = 0; j < numRows - i; j++) {
 				System.out.print(" ");
 			}
-
+			
 			// Print stars
 			for (int k = 1; k <= 2 * i - 1; k++) {
 				System.out.print("*");

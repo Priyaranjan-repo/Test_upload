@@ -2,7 +2,7 @@ package com.qa.JavaPractice;
 
 import java.util.Arrays;
 
-public class shiftZero8 {
+public class shiftZero8{
 
 	public static void main(String[] args) {
 
@@ -12,11 +12,13 @@ public class shiftZero8 {
 
 		for (int n = 0; n < arr.length; n++) {
 
-			for (int i = 0; i < arr.length - 1; i++) {
-				if (arr[i] == 0) {
-					int temp = arr[i + 1];
-					arr[i + 1] = arr[i];
-					arr[i] = temp;
+			for (int j = 0; j < arr.length - 1; j++) {
+				
+				if (arr[j] == 0) {
+				
+					int b = arr[j + 1];
+					arr[j + 1] = arr[n];
+					arr[j] = b;
 				}
 			}
 		}

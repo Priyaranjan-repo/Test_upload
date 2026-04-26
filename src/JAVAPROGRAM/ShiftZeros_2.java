@@ -1,6 +1,6 @@
 package JAVAPROGRAM;
 
-public class ShiftZeros {
+public class ShiftZeros_2 {
 
 	public static void moveZero(int[] arr) {
 		int len = arr.length;

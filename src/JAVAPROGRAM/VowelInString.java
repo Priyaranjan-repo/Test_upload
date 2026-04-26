@@ -3,7 +3,7 @@ package JAVAPROGRAM;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FindVowelInString {
+public class VowelInString {
 	// Count no of vowel and print each vowel no of time present in string
 	// String s= "I am a good boy";
 	// total vowel-> 6,i=1,a=2,o=3,y=1 index for loop,str.charAt(i)=='a'||,
@@ -19,7 +19,7 @@ public class FindVowelInString {
 
 		for (int i = 0; i < s.length(); i++) {
 
-			if (s.charAt(i) == 'a' || s.charAt(i) == 'e' || s.charAt(i) == 'i' || s.charAt(i) == 'o'
+		if (s.charAt(i) == 'a' || s.charAt(i) == 'e' || s.charAt(i) == 'i' || s.charAt(i) == 'o'
 
 					|| s.charAt(i) == 'u') {
 				count++;

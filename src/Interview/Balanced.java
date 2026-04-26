@@ -15,8 +15,6 @@ public class Balanced {
 	public static boolean isValid(String  s) {
 
 		Stack<Character> st = new Stack<Character>();
-	
-		
 		for (char it : s.toCharArray()) {
 		
 			

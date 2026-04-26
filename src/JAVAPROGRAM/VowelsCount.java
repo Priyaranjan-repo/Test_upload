@@ -1,6 +1,6 @@
 package JAVAPROGRAM;
 
-public class CountVowels {
+public class VowelsCount {
 
 	public static void main(String[] args) {
 
@@ -9,7 +9,7 @@ public class CountVowels {
 		String vowel = "aeiou";
 
 		int count = 0;
-		for (int i = 0; i <= str.length(); i++) {
+		for (int i = 0; i < str.length(); i++) {
 
 			if (vowel.indexOf(str.charAt(i)) != -1) {
 				count++;
@@ -18,3 +18,4 @@ public class CountVowels {
 		System.out.println("total voewel is:" + count);
 	}
 }
+ 

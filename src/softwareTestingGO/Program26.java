@@ -13,9 +13,10 @@ public class Program26 {
 		String op = "";
 
 		for (int i = 0; i < arr.length; i++) {
+			op = arr[i] + " ";
 
 		}
-
+		System.out.println(op);
 	}
 
 }

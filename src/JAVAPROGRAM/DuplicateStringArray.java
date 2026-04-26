@@ -3,7 +3,7 @@ package JAVAPROGRAM;
 import java.util.HashSet;
 import java.util.Set;
 
-public class ArrayDuplicare {
+public class DuplicateStringArray {
 
 	public static void main(String[] args) {
 
@@ -28,11 +28,11 @@ public class ArrayDuplicare {
 
 		Set<String> set = new HashSet<String>();
 
-		for (String s : names) {
+		for (String dup : names) {
 
-			if (set.add(s) == false) {
+			if (set.add(dup) == false) {
 
-				System.out.println("Duplicate element in array:" + s);
+				System.out.println("Duplicate element in array:" + dup);
 
 			}
 		}

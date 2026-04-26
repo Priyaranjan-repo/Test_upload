@@ -16,9 +16,9 @@ public class NoOfEntryString {
 	public static void countCharFreq(String str) {
 
 		Map<Character, Integer> map = new HashMap<Character, Integer>();
-		char[] word = str.toCharArray();
+//		char[] word = str.toCharArray();
 
-		for (char ch : word) {
+		for (char ch : str.toCharArray()) {
 
 			if (map.containsKey(ch)) {
 

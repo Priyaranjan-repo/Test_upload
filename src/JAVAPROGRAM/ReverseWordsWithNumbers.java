@@ -22,7 +22,9 @@ public class ReverseWordsWithNumbers {
 			if (Character.isLetter(currentChar)) {
 				currentSegment.append(currentChar);
 			} else {
-				// If the character is a digit, reverse the current segment (letters) and append
+				// If the character is a digit, reverse the current
+                // segment (letters) and append
+
 				// to result
 				result.append(currentSegment.reverse().toString());
 				currentSegment.setLength(0); // Clear the segment

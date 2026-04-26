@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class AlphaNos {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		String str = "This@#$)3546468)is!##$&&an#&*In455((*^$*(terview$*$";
 
@@ -17,7 +16,7 @@ public class AlphaNos {
 
 		System.out.println(Arrays.toString(alpha).replace(",", " "));
 
-		System.out.println(Arrays.toString(number).replaceAll(",", "|"));
+		System.out.println(Arrays.toString(number).replaceAll(",", " "));
 
 	}
 }

@@ -9,11 +9,11 @@ public class Factorial1 {
 
 	static void FactNumber() {
 		int fact = 1;
-		int n = 5;
-		for (int i = 1; i <= n; i++) {
-			fact = fact * i;
+		int n = 7;
+		for(int i =1;i<=n; i++) {
+			fact= fact*i;
 		}
-		System.out.println("factorial no is n:" + fact);
+		System.out.println("factorial no is" + n +":" + fact);
 
 	}
 

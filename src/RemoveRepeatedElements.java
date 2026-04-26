@@ -35,7 +35,6 @@ public class RemoveRepeatedElements {
 
 			}
 		}
-
 		return li;
 	}
 
