@@ -1,21 +1,20 @@
 package Interview;
 
-public class aksedIngterview {
+public class asked {
 
 	public static void main(String[] args) {
 	
 		// aabbbccabaee -> a2b3c2a1b1a1e1
 
-		String ip = "AAAABBCCCDFFFF";
+		String ip = "aabbbccabaee";
 		String op ="";
 
 		int count = 0;
 
 		for (int i = 0; i < ip.length(); i++) {
 		
-		for (int j = 0; j < ip.length(); j++) {	
-				
-			
+		for (int j = 0; j < ip.length(); j++) {
+            
 			if(ip.charAt(i)==ip.charAt(j)) {
 				
 			count++;
